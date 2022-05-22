@@ -52,10 +52,10 @@ Console.Clear();
 Console.WriteLine($"Complete la matriz de {rows}x{columns}:\n");
 for (int row = 0; row < rows; row++)
 {
-    Console.WriteLine($"Fila {row}");
+    Console.WriteLine($"Fila ↓ ({row}/{rows-1})");
     for (int column = 0; column < columns; column++)
     {
-        Console.Write($"\tColumna {column}: ");
+        Console.Write($"\tColumna → ({column}/{columns-1}): ");
         numbers[row, column] = int.Parse(Console.ReadLine());
     }
     Console.WriteLine();
