@@ -104,7 +104,8 @@ Console.WriteLine("}");
 
 
 /*
-//short version
+// ========= SHORT VERSION ========= //
+
 //1) Crear una matriz de dos dimensiones de tipo int llamada numeros,
 int[,] numbers;
 
@@ -135,17 +136,16 @@ for (int row = 0; row < rows; row++)
 
 
 //5) Recorrer la matriz para mostrar cada valor de la matriz
-Console.WriteLine($"\nMatriz de {rows}x{columns}:\n       [");
+Console.WriteLine($"\nMatriz de {rows}x{columns}:\n");
 for (int row = 0; row < rows; row++)
 {
     Console.Write("\t[");
     for (int column = 0; column < columns; column++)
     {
-        Console.Write($"{numbers[row, column]}{(column+1 < columns ? ",\t" : "")}");
+        Console.Write($"{numbers[row, column]}\t");
     }
     Console.WriteLine("],");
 }
-Console.WriteLine("       ]");
 
 
 //6) Calcular el promedio de cada columna y asignarlo a la posicion correspondiente dentro del vector promedios
@@ -170,10 +170,10 @@ Console.WriteLine($"\t" + string.Join("\t", averages));
 
 // Ejemplo matriz 3f x 3c
  
-//[   c0   c1  c2
-//f0  [11, 12, 13],
-//f1  [22, 23, 24],
-//f2  [33, 34, 35]
-//]
+//{   c0   c1  c2
+//f0  {11, 12, 13},
+//f1  {22, 23, 24},
+//f2  {33, 34, 35}
+//}
 
  */
