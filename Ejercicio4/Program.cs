@@ -104,7 +104,7 @@ Console.WriteLine("}");
 
 
 /*
-// ========= SHORT VERSION ========= //
+// ========= VERSION CODEANDO PUNTO POR PUNTO ========= //
 
 //1) Crear una matriz de dos dimensiones de tipo int llamada numeros,
 int[,] numbers;
